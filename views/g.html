@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Hover Effect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            color: white;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            background-color:#47289c;
+        }
+        .container{
+            width: 100%;
+            height: 65vh;
+            padding: 2vw 8vw;
+            display: block;
+            justify-content: center;
+            
+        }
+        .box{
+            margin-left: 15%;
+            width: 70%;
+            height: 100%;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
+        
+        .box img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+            transition: all 0.2s ease-in;
+        }
+        .content{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(43, 43, 43, 0.796);
+            backdrop-filter: blur(12px);
+            position: absolute;
+            right: -100%;
+            bottom: 0%;
+            padding: 25px 20px;
+            transition: all 1s ease-in;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .box:hover img{
+            transform: scale(1.2);
+        }
+        .box:hover .content{
+            right: 0;
+        
+        }
+        .content h2{
+            font-size: 20px;
+        }
+        .rating{
+            display: block;
+            gap: 10px;
+        }
+        .rating p{
+            color: #c8c8c8;
+        }
+        .rating i {
+            color: yellow;
+        }
+        .type{
+            width: fit-content;
+            border: 1px solid white;
+            color: silver;
+            padding: 5px 8px;
+            border-radius: 8px;
+        }
+        .about{
+            color: rgb(204, 204, 204);
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        }
+        .ticketFees span{
+            color: #c8c8c8;
+            font-weight: normal;
+        }
+        .ticketFees{
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://joeboylenaturephotography.com/virteom/uploaded_media/Modules/Categories/201210017-1600-taj-mahal-front-angled-portrait-1350947565.jpg" alt="Taj Mahal">
+            <div class="content">
+                <h2>Taj Mahal</h2>
+                <div class="rating">
+                    <p>4.6</p>
+                    <i class="fa-solid fa-star"></i>
+                    <p>(2.3L)</p>
+                </div>
+                <p class="type">Monument</p>
+                <div class="about">
+                    The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India. It was by the fifth Mughal emperor.
+                </div>
+                <div class="ticketFees"><span>Ticket Fees :</span> Rs.1,000</div>
+            </div>
+        </div>
+        <div class="box" id="box2">
+            <img src="https://i.pinimg.com/originals/16/57/9d/16579dc7ca4a80c3e512472f3e1ba954.jpg" alt="Sri Harmandir Sahib">
+            <div class="content">
+                <h2>Sri Harmandir Sahib</h2>
+                <div class="rating">
+                    <p>4.9</p>
+                    <i class="fa-solid fa-star"></i>
+                    <p>(1.9L)</p>
+                </div>
+                <p class="type">Gurdwara</p>
+                <div class="about">The Golden Temple is a gurdwara located in the city of Amritsar, Punjab, India. It is the pre-eminent spiritual site of Sikhism.</div>
+                <div class="ticketFees"><span>Ticket Fees :</span> Free</div>
+            </div>
+        </div>
+        <div class="box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/India_Gate_close-up.jpg/398px-India_Gate_close-up.jpg" alt="India Gate">
+            <div class="content">
+                <h2>India Gate</h2>
+                <div class="rating">
+                    <p>4.6</p>
+                    <i class="fa-solid fa-star"></i>
+                    <p>(1.6L)</p>
+                </div>
+                <p class="type">Castle</p>
+                <div class="about">The India Gate is a war memorial located near the Kartavya path on the eastern edge of the "ceremonial axis" of New Delhi, formerly called Rajpath.
+                </div>
+                <div class="ticketFees"><span>Ticket Fees :</span> Rs.500</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

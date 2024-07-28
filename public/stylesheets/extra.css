@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    background-color: rgb(45, 45, 45);
+}
+
+.container {  
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    align-self: center;
+    padding-top: 8%;
+    padding-left: 25%;
+    padding-bottom: 25%;
+    grid-template-columns: 0.9fr 1.1fr 1fr;
+    grid-template-rows: 1fr 1.1fr 0.9fr;
+    gap: 6%;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "card card ."
+    "card2 card2 ."
+    "card3 card3 .";
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size:1vw;
+
+}
+
+
+.card{ 
+    grid-area: card;
+    background: rgba(66, 66, 66, 0.829);
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 15px 20px #000000;
+}
+
+.card2 { 
+    grid-area: card2;
+    background: rgba(66, 66, 66, 0.829);
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 15px 20px #000000;
+
+}
+
+.card3{
+    grid-area: card3;
+    background: rgba(66, 66, 66, 0.829);
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 15px 20px #000000;
+
+}
+img{
+    float: left;
+    padding-right: 10px;
+    padding-top: 40px;
+}
+
+.card:hover {
+    transform: scale(1.03); /* Slightly larger scale for emphasis */
+    box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.251); /* Enhanced shadow on hover */
+}
+.card2:hover {
+    transform: scale(1.03); /* Slightly larger scale for emphasis */
+    box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.251); /* Enhanced shadow on hover */
+}
+
+.card3:hover {
+    transform: scale(1.03); /* Slightly larger scale for emphasis */
+    box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.251); /* Enhanced shadow on hover */
+}
+
+
